@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Fetch-Info</title>
+    <style>
+        table{
+          width: 100%;
+          margin: 25px 0;
+          border-collapse: collapse;
+         
+        }
+        table, th, td{
+          border: 1px solid #6C220B;
+        }
+        table th, table td{
+          padding: 8px;
+          text-align: left;
+        }
+     </style>
+  </head>
+  <body>
+    <h1 class="text-center">Welcome to NewYork Times Archives</h1>
+    <div class="container">
+        <div class="card">
+            <h5 class="card-header text-center">Search by Year and Month                                  </h5>
+            <div class="card-body">
+                    <h5 class="card-title text-center">Search by different fields</h5>
+            <form id="myForm">
+                <div class="form-group yearClass">
+                    <label for="Year">Year</label>
+                    <input type="number" class="form-control" id="year" placeholder="Enter years from 1851 to present">
+                </div>
+                
+                <div class="form-group">
+                    <label for="MonthSelect">Select a month</label>
+                    <select class="form-control" id="MonthSelect">
+                      <option>January</option>
+                      <option>February</option>
+                      <option>March</option>
+                      <option>April</option>
+                      <option>May</option>
+                      <option>June</option>
+                      <option>July</option>
+                      <option>August</option>
+                      <option>September</option>
+                      <option>October</option>
+                      <option>November</option>
+                      <option>December</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="month">Keyword</label>
+                     <input type="text" class="form-control" id="tag" placeholder="Enter a keyword to search">
+                </div>
+             </form>
+                <a href="#" class="btn btn-primary btn-block insert" id="btn-submit">Enter</a>
+            </div>
+            <h7 class="text-center" id="table-below" style="color:green">Your search will appear in the table below</h7>
+            <table id="storyTable">
+                <thead>
+                   <tr>
+                      <th>S.No</th>
+                      <th>Stories Selected</th>
+                      
+                   </tr>
+                </thead>
+                <tbody>
+                   
+                </tbody>
+             </table>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+   <!--  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
